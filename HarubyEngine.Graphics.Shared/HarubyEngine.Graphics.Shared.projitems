@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>8b2a35aa-7702-4d4c-b59c-9c0ceea8b6a7</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>HarubyEngine.Graphics</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)GraphicsFunction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MeshIndex16Buffer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MeshIndex32Buffer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MeshInputLayout.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MeshVector4Buffer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RenderBuffer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ShaderFloat2Variable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ShaderFloat3Variable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ShaderFloat4Variable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ShaderFloatVariable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ShaderIntVariable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ShaderMatrix3Variable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ShaderProgram.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ShaderTexture2DVariable.cs" />
+    <Compile Include="..\HarubyEngine.Graphics.Shared\MeshVector3Buffer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Texture2DBuffer.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Vortice.Direct3D11" Version="3.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HarubyEngine\HarubyEngine.csproj" />
+  </ItemGroup>
+
+  <Import Project="..\HarubyEngine.Graphics.Shared\HarubyEngine.Graphics.Shared.projitems" Label="Shared" />
+
+</Project>
